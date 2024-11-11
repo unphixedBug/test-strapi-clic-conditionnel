@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filtres",
+  "info": {
+    "singularName": "filtre",
+    "pluralName": "filtres",
+    "displayName": "Filtre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "filtre": {
+      "type": "string"
+    },
+    "oeuvre": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::oeuvre.oeuvre",
+      "inversedBy": "filtres"
+    }
+  }
+}
